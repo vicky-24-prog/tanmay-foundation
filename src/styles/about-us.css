@@ -1,0 +1,415 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.about-us {
+  /*div class name accessing design it dot operator*/
+  text-align: left;
+  /*navbar ka content(home,gallery,media etc) center mai aaya hai*/
+}
+
+.slideshow-container {
+  position: relative;
+  width: 1910px;
+  height: 750px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  /* Smooth fade effect */
+}
+
+/* Active image */
+.slideshow-image.active {
+  opacity: 1;
+}
+
+.about-us-navbar-below-photos {
+  background-color: rgb(22, 139, 22);
+  padding: 8px 0;
+  width: 100vw;
+  position: relative;
+  margin-top: -20px;
+}
+
+.donate-button {
+  padding: 13px 50px;
+  background-color: #f7b500;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  top: 50%;
+
+  
+  margin-top: 14px;
+  font-family: sans-serif;
+  margin-right: 40px;
+}
+
+.donate-button:hover {
+  transform: translateY(-4px);
+}
+
+.donate-button span {
+  font-size: 23px;
+}
+
+.about-us-1 {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-us-title-1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #3e8e41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.about-us-title-1 .line {
+  flex: 1;
+  height: 7px;
+  background-color: #3f8a3e;
+}
+
+.about-us-text {
+  font-size: 25px;
+}
+
+.our-focus-on-work h1 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  color: #3e8e41;
+  margin-top: -10px;
+}
+
+.know-more-title h2 {
+  font-size: 30px;
+  margin-left: 150px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.know-more-button {
+  padding: 15px 40px;
+  background-color: #3e8e41;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  margin-left: 150px;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+.know-more-button:hover {
+  transform: translateY(-4px);
+}
+
+.media {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.media-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #3e8e41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.media-title .line {
+  flex: 1;
+  height: 6px;
+  background-color: #3f8a3e;
+}
+
+.media1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 600px;
+  margin-left: 140px;
+  border-radius: 20px;
+}
+
+.media2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 600px;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+.media3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 600px;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+.media4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 600px;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+.our-impact {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.our-impact-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #3e8e41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.our-impact-title .line {
+  flex: 1;
+  height: 6px;
+  background-color: #3f8a3e;
+}
+
+.OurImpact {
+  width: 100%;
+  margin-top: -30px;
+  height: 600px;
+}
+
+.meet-the-team {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.meet-the-team-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #3e8e41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.meet-the-team-title .line {
+  flex: 1;
+  height: 6px;
+  background-color: #3f8a3e;
+}
+
+.NgoTeamMember {
+  width: 100%;
+  margin-top: -50px;
+  height: 500px;
+}
+
+.our-progress {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.our-progress-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #3e8e41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.our-progress .line {
+  flex: 1;
+  height: 6px;
+  background-color: #3f8a3e;
+}
+
+.OurProgress {
+  width: 100%;
+  margin-top: -70px;
+  height: 400px;
+}
+
+
+
+.card-agriculture img {
+  width: 700px;
+  height: 200px;
+  border-radius: 20px;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+.agriculture-overlay-container {
+  position: relative;
+  width: 700px;
+  height: 200px;
+  margin-top: 40px;
+  margin-left: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.agriculture-overlay-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+.agriculture-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(88, 219, 12, 0.6); /* semi-transparent green */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.agriculture-text {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
+.left-img-1-overlay-container {
+  position: relative;
+  width: 300px; /* Match the width of the image */
+  height: 150px; /* Match the height of the image */
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.left-img-1-overlay-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  margin-top: 10px; 
+}
+
+.left-img-1-overlay {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.6); /* semi-transparent red */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.left-img-1-text {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
+
+.left-img-2 {
+  height: 500px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  top: -150px;
+  margin-left: 400px;
+  position: relative;
+  
+}
+
+
+.right-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-top: -2000px;
+  margin-bottom: 170px;
+} 
+
+.focus-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.know-more-title {
+  flex: 3;
+}
+
+.right {
+  background-color: white;
+  flex-shrink: 0;
+  border-radius: 10px;
+  margin: 100px;
+  height: 800px;
+  width: 400px;
+  flex: 2 1 200px; 
+  margin-top: 100px;
+  box-shadow: 10px 8px 12px 10px rgba(0, 0, 0, 0.2);
+}
+
+.aboutus-donate-button{
+  text-decoration: none;
+  color: black;
+}

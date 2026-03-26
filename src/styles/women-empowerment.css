@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.women-empowerment-page-title span {
+    /* h1-tag class home-title inside this two more class span=>class:green and class span=>class:red */
+    padding: 0 7px;
+    /* Adds space between the words */
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.page-title {
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.women-with-computer {
+    width: 605px;
+    height: 405px;
+    margin-left: 30px;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.women-with-education {
+    width: 605px;
+    height: 405px;
+    margin-left: 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.women-with-farming {
+    width: 600px;
+    height: 405px;
+    margin-left: 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.women-with-frabic {
+    width: 605px;
+    height: 405px;
+    margin-left: 30px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.women-with-startup {
+    width: 605px;
+    height: 405px;
+    margin-left: 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.women-with-water {
+    width: 605px;
+    height: 405px;
+    margin-left: 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.why-women-empowerment h2 {
+    font-size: 50px;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.why-women-empowerment-paragraph {
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.Our-Role-in-Women-Empowerment h2 {
+    font-size: 50px;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.Our-Role-in-Women-Empowerment-paragraph {
+    font-size: 32px;
+    margin-left: 30px;
+}
+
+.program-card {
+    background-color: #d8e3d5;
+    border: 20px solid #df4737;
+    border-radius: 15px;
+    text-align: center;
+    width: 500px;
+    padding: 120px;
+    margin-left: 1050px;
+    margin-top: -830px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 28px rgba(0, 0, 0, 0.3);
+}
+
+.program-title {
+    color: #000;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+
+.program-image {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.program-description {
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+}
+
+.Cultivating-Change-photo {
+    width: 100%;
+    height: 600px;
+    margin-top: 130px;
+}
+
+.key-initiatives h1 {
+    font-size: 70px;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.key-initiatives h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.key-initiatives p {
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+.footer {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 20px 40px;
+    color: black;
+    text-align: center;
+}
+
+.footer-section {
+    margin-bottom: 40px;
+    justify-content: end;
+    border-top: 5px solid black;
+    padding-top: 15px;
+}
+
+.footer-section h1 {
+    font-size: 45px;
+    color: #2a7e35;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 30px;
+    line-height: 1.6;
+    color: black;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.footer-column h3 {
+    color: #2a7e35;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    font-size: 25px;
+    margin: 5px 0;
+    color: black;
+}
+
+.footer-column p {
+    font-size: 22px;
+    color: black;
+    line-height: 1.5;
+}
+
+.footer-bottom {
+    justify-content: end;
+    border-top: 5px solid #2a7e35;
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    font-size: 20px;
+    color: black;
+    margin-left: 1398px;
+}
