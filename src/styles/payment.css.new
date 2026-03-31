@@ -93,8 +93,81 @@ body {
 .submit-btn:hover {
   background-color: #218838;
 }
+
 .QR-section {
   display: flex;
   justify-content: center;
   margin: 24px auto;
+}
+
+/* Tablets - 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .title-container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .payment-box {
+    max-width: 90%;
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .submit-btn {
+    font-size: 22px;
+  }
+}
+
+/* Mobile Phones - Up to 479px */
+@media (max-width: 479px) {
+  body {
+    padding: 0;
+  }
+
+  .title-container {
+    height: auto;
+    margin-top: 0;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .payment-box {
+    margin: 20px auto;
+    max-width: 95%;
+    width: 95%;
+    padding: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .input-field {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    margin-left: 0;
+  }
+
+  .QR-section {
+    margin: 16px auto;
+  }
 }

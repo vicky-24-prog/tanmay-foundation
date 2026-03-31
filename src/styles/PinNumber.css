@@ -12,12 +12,12 @@ body {
 }
 
 .pin-title {
-  font-size: 31px;
+  font-size: clamp(18px, 4vw, 31px);
   color: black;
   text-align: center;
   margin-bottom: 20px;
   border-bottom: 5px solid #00bfa5;
-  margin-left: 20px;
+  margin-left: clamp(10px, 3%, 20px);
   padding-bottom: 5px;
   margin-top: 30px;
 }
@@ -29,17 +29,17 @@ body {
 }
 
 .pin-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 40px auto;
-  text-align: center;
-  padding: 50px;
+  max-width: 400px;
+  width: 90%;
+  padding: 32px;
   background-color: white;
   border-radius: 12px;
-  width: 600px;
-  height: 500px;
-  max-width: 400px;
   box-shadow: 10px 10px 10px 10px rgba(3, 0, 0, 0.1);
-  margin-top: 80px;
-  margin-left: 700px;
+  box-sizing: border-box;
 }
 
 .pin-container {
@@ -52,10 +52,10 @@ body {
 }
 
 .pin-box {
-  width: 50px;
-  height: 50px;
+  width: clamp(40px, 8vw, 50px);
+  height: clamp(40px, 8vw, 50px);
   text-align: center;
-  font-size: 24px;
+  font-size: clamp(18px, 3vw, 24px);
   border-radius: 8px;
   border: 2px solid #ccc;
   outline: none;
@@ -70,16 +70,16 @@ body {
 }
 
 .submit-btn1 {
-  width: 320px;
+  width: clamp(150px, 85%, 320px);
   padding: 12px;
   background-color: #000;
   color: #fff;
   border: none;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .submit-btn:hover {
@@ -93,5 +93,5 @@ body {
 }
 
 .generate-button{
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
 }

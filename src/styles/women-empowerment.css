@@ -3,108 +3,76 @@ body {
     padding: 0;
 }
 .women-empowerment-page-title span {
-    /* h1-tag class home-title inside this two more class span=>class:green and class span=>class:red */
     padding: 0 7px;
-    /* Adds space between the words */
-    font-size: 70px;
+    font-size: clamp(36px, 8vw, 70px);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: underline;
 }
 
 .page-title {
-    margin-top: 60px;
-    margin-left: 50px;
+    margin-top: clamp(30px, 5vw, 60px);
+    margin-left: clamp(10px, 5%, 50px);
 }
 
-.women-with-computer {
-    width: 605px;
-    height: 405px;
-    margin-left: 30px;
-    border-radius: 25px;
-    margin-top: 30px;
+img, [class*='women-'] {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 25px;
+  margin: 16px auto;
 }
 
-.women-with-education {
-    width: 605px;
-    height: 405px;
-    margin-left: 20px;
-    border-radius: 25px;
-    margin-top: 10px;
-}
-
-.women-with-farming {
-    width: 600px;
-    height: 405px;
-    margin-left: 20px;
-    border-radius: 25px;
-    margin-top: 10px;
-}
-
-.women-with-frabic {
-    width: 605px;
-    height: 405px;
-    margin-left: 30px;
-    border-radius: 25px;
-    margin-top: 10px;
-}
-
-.women-with-startup {
-    width: 605px;
-    height: 405px;
-    margin-left: 20px;
-    border-radius: 25px;
-    margin-top: 10px;
-}
-
-.women-with-water {
-    width: 605px;
-    height: 405px;
-    margin-left: 20px;
-    border-radius: 25px;
-    margin-top: 10px;
+@media (max-width: 768px) {
+  img, [class*='women-'] {
+    width: 100%;
+    margin: 8px auto;
+  }
 }
 
 .why-women-empowerment h2 {
-    font-size: 50px;
-    margin-left: 30px;
+    font-size: clamp(28px, 5vw, 50px);
+    margin-left: clamp(10px, 5%, 30px);
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
 }
 
 .why-women-empowerment-paragraph {
-    font-size: 30px;
-    margin-left: 30px;
+    font-size: clamp(18px, 3vw, 30px);
+    margin-left: clamp(10px, 5%, 30px);
 }
 
 .Our-Role-in-Women-Empowerment h2 {
-    font-size: 50px;
-    margin-left: 30px;
+    font-size: clamp(28px, 5vw, 50px);
+    margin-left: clamp(10px, 5%, 30px);
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
 }
 
 .Our-Role-in-Women-Empowerment-paragraph {
-    font-size: 32px;
-    margin-left: 30px;
+    font-size: clamp(18px, 3vw, 32px);
+    margin-left: clamp(10px, 5%, 30px);
 }
 
 .program-card {
-    background-color: #d8e3d5;
-    border: 20px solid #df4737;
-    border-radius: 15px;
-    text-align: center;
-    width: 500px;
-    padding: 120px;
-    margin-left: 1050px;
-    margin-top: -830px;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 4px 28px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+  padding: 32px;
+  margin: 24px auto;
+  position: static;
+  background-color: #d8e3d5;
+  border: 20px solid #df4737;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
 }
 
 .program-title {
     color: #000;
-    font-size: 50px;
+    font-size: clamp(28px, 5vw, 50px);
     margin-bottom: 20px;
     font-weight: bold;
     margin-top: -30px;
@@ -117,33 +85,35 @@ body {
 }
 
 .program-description {
-    font-size: 25px;
+    font-size: clamp(14px, 2vw, 25px);
     color: #000;
     font-weight: bold;
 }
 
 .Cultivating-Change-photo {
     width: 100%;
-    height: 600px;
-    margin-top: 130px;
+    height: clamp(300px, 50vh, 600px);
+    margin-top: clamp(60px, 8vw, 130px);
+    object-fit: cover;
 }
 
 .key-initiatives h1 {
-    font-size: 70px;
-    margin-left: 30px;
+    font-size: clamp(36px, 8vw, 70px);
+    margin-left: clamp(10px, 5%, 30px);
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
 }
 
 .key-initiatives h2 {
-    font-size: 40px;
+    font-size: clamp(24px, 4vw, 40px);
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
+    margin-left: clamp(10px, 5%, 30px);
 }
 
 .key-initiatives p {
-    font-size: 30px;
-    margin-left: 60px;
+    font-size: clamp(16px, 2vw, 30px);
+    margin-left: clamp(10px, 5%, 60px);
 }
 
 .footer {
@@ -162,13 +132,13 @@ body {
 }
 
 .footer-section h1 {
-    font-size: 45px;
+    font-size: clamp(28px, 5vw, 45px);
     color: #2a7e35;
     margin-bottom: 10px;
 }
 
 .footer-section p {
-    font-size: 30px;
+    font-size: clamp(16px, 2vw, 30px);
     line-height: 1.6;
     color: black;
 }
@@ -190,7 +160,7 @@ body {
 .footer-column h3 {
     color: #2a7e35;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: clamp(18px, 2vw, 30px);
 }
 
 .footer-column ul {
@@ -199,13 +169,13 @@ body {
 }
 
 .footer-column ul li {
-    font-size: 25px;
+    font-size: clamp(14px, 1.5vw, 25px);
     margin: 5px 0;
     color: black;
 }
 
 .footer-column p {
-    font-size: 22px;
+    font-size: clamp(14px, 1.5vw, 22px);
     color: black;
     line-height: 1.5;
 }
@@ -217,7 +187,200 @@ body {
 }
 
 .footer-bottom p {
-    font-size: 20px;
+    font-size: clamp(14px, 1.5vw, 20px);
     color: black;
-    margin-left: 1398px;
+    margin-left: auto;
+    text-align: right;
+}
+
+/* Desktop - 1024px and above */
+@media (min-width: 1024px) {
+  .footer-columns {
+    justify-content: space-around;
+  }
+
+  .footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 250px;
+  }
+
+  .program-card {
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
+/* Tablets - 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .women-empowerment-page-title span {
+    font-size: 44px;
+  }
+
+  .page-title {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .why-women-empowerment h2,
+  .Our-Role-in-Women-Empowerment h2,
+  .key-initiatives h1 {
+    margin-left: 20px;
+  }
+
+  .why-women-empowerment-paragraph,
+  .Our-Role-in-Women-Empowerment-paragraph {
+    margin-left: 20px;
+  }
+
+  .key-initiatives p {
+    margin-left: 20px;
+  }
+
+  .program-card {
+    width: 90%;
+    max-width: 450px;
+    padding: 24px;
+    margin: 16px auto;
+    border: 15px solid #df4737;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Mobile Phones - Up to 479px */
+@media (max-width: 479px) {
+  body {
+    padding: 0;
+  }
+
+  .women-empowerment-page-title span {
+    font-size: 28px;
+    padding: 0 5px;
+  }
+
+  .page-title {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  img, [class*='women-'] {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 8px auto;
+  }
+
+  .why-women-empowerment h2,
+  .Our-Role-in-Women-Empowerment h2,
+  .key-initiatives h1,
+  .key-initiatives h2 {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .why-women-empowerment-paragraph,
+  .Our-Role-in-Women-Empowerment-paragraph {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.5;
+  }
+
+  .program-card {
+    width: 95%;
+    max-width: none;
+    padding: 16px;
+    margin: 12px auto;
+    border: 10px solid #df4737;
+  }
+
+  .program-title {
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+
+  .program-description {
+    font-size: 12px;
+  }
+
+  .Cultivating-Change-photo {
+    height: auto;
+    min-height: 200px;
+    margin-top: 30px;
+  }
+
+  .key-initiatives p {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.5;
+  }
+
+  .footer {
+    padding: 10px 15px;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .footer-section h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .footer-section p {
+    font-size: 14px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    margin: 8px 0;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .footer-column ul li {
+    font-size: 12px;
+    margin: 3px 0;
+  }
+
+  .footer-column p {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    padding-top: 10px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }

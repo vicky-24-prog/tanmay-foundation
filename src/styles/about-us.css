@@ -11,8 +11,10 @@ body {
 
 .slideshow-container {
   position: relative;
-  width: 1910px;
-  height: 750px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 400px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -40,24 +42,21 @@ body {
 }
 
 .donate-button {
-  padding: 13px 50px;
+  padding: clamp(8px, 2vw, 13px) clamp(30px, 5%, 50px);
   background-color: #f7b500;
   color: black;
   border: none;
   border-radius: 30px;
-  font-size: 22px;
+  font-size: clamp(14px, 2vw, 22px);
   font-weight: bold;
   cursor: pointer;
   display: flex;
   align-items: center;
   box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
-  top: 50%;
-
-  
   margin-top: 14px;
   font-family: sans-serif;
-  margin-right: 40px;
+  margin-right: clamp(10px, 3%, 40px);
 }
 
 .donate-button:hover {
@@ -74,13 +73,14 @@ body {
 }
 
 .about-us-title-1 {
-  font-size: 60px;
+  font-size: clamp(32px, 6vw, 60px);
   font-weight: bold;
   color: #3e8e41;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: clamp(20px, 5%, 60px);
+  flex-wrap: wrap;
 }
 
 .about-us-title-1 .line {
@@ -90,11 +90,12 @@ body {
 }
 
 .about-us-text {
-  font-size: 25px;
+  font-size: clamp(16px, 2.5vw, 25px);
+  line-height: 1.6;
 }
 
 .our-focus-on-work h1 {
-  font-size: 60px;
+  font-size: clamp(32px, 6vw, 60px);
   text-align: center;
   font-weight: bold;
   color: #3e8e41;
@@ -102,10 +103,10 @@ body {
 }
 
 .know-more-title h2 {
-  font-size: 30px;
-  margin-left: 150px;
+  font-size: clamp(18px, 3vw, 30px);
+  margin-left: clamp(10px, 5%, 150px);
   font-weight: bold;
-  margin-top: 100px;
+  margin-top: clamp(40px, 8vw, 100px);
 }
 
 .know-more-button {
@@ -114,17 +115,14 @@ body {
   color: white;
   border: none;
   border-radius: 30px;
-  font-size: 25px;
+  font-size: clamp(14px, 2vw, 25px);
   font-weight: bold;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
-  margin-left: 150px;
-  top: 50%;
-  left: 50%;
-  display: inline-block;
+  margin-left: clamp(10px, 5%, 150px);
   font-family: sans-serif;
 }
 
@@ -139,13 +137,14 @@ body {
 }
 
 .media-title {
-  font-size: 60px;
+  font-size: clamp(32px, 6vw, 60px);
   font-weight: bold;
   color: #3e8e41;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: clamp(20px, 5%, 60px);
+  flex-wrap: wrap;
 }
 
 .media-title .line {
@@ -154,40 +153,13 @@ body {
   background-color: #3f8a3e;
 }
 
-.media1 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 300px;
-  height: 600px;
-  margin-left: 140px;
+.media1, .media2, .media3, .media4 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
   border-radius: 20px;
-}
-
-.media2 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 300px;
-  height: 600px;
-  margin-left: 100px;
-  border-radius: 20px;
-}
-
-.media3 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 400px;
-  height: 600px;
-  margin-left: 100px;
-  border-radius: 20px;
-}
-
-.media4 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 300px;
-  height: 600px;
-  margin-left: 100px;
-  border-radius: 20px;
+  display: block;
 }
 
 .our-impact {
@@ -197,13 +169,14 @@ body {
 }
 
 .our-impact-title {
-  font-size: 60px;
+  font-size: clamp(32px, 6vw, 60px);
   font-weight: bold;
   color: #3e8e41;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: clamp(20px, 5%, 60px);
+  flex-wrap: wrap;
 }
 
 .our-impact-title .line {
@@ -215,7 +188,8 @@ body {
 .OurImpact {
   width: 100%;
   margin-top: -30px;
-  height: 600px;
+  height: clamp(250px, 50vh, 600px);
+  object-fit: cover;
 }
 
 .meet-the-team {
@@ -225,13 +199,14 @@ body {
 }
 
 .meet-the-team-title {
-  font-size: 60px;
+  font-size: clamp(32px, 6vw, 60px);
   font-weight: bold;
   color: #3e8e41;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: clamp(20px, 5%, 60px);
+  flex-wrap: wrap;
 }
 
 .meet-the-team-title .line {
@@ -243,7 +218,8 @@ body {
 .NgoTeamMember {
   width: 100%;
   margin-top: -50px;
-  height: 500px;
+  height: clamp(250px, 45vh, 500px);
+  object-fit: cover;
 }
 
 .our-progress {
@@ -253,13 +229,14 @@ body {
 }
 
 .our-progress-title {
-  font-size: 60px;
+  font-size: clamp(32px, 6vw, 60px);
   font-weight: bold;
   color: #3e8e41;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: clamp(20px, 5%, 60px);
+  flex-wrap: wrap;
 }
 
 .our-progress .line {
@@ -271,27 +248,32 @@ body {
 .OurProgress {
   width: 100%;
   margin-top: -70px;
-  height: 400px;
+  height: clamp(200px, 40vh, 400px);
+  object-fit: cover;
 }
 
 
 
 .card-agriculture img {
-  width: 700px;
-  height: 200px;
+  width: 100%;
+  max-width: clamp(300px, 90%, 700px);
+  height: clamp(100px, 25vh, 200px);
   border-radius: 20px;
   margin-top: 1px;
   margin-left: 1px;
+  object-fit: cover;
 }
 
 .agriculture-overlay-container {
   position: relative;
-  width: 700px;
-  height: 200px;
-  margin-top: 40px;
-  margin-left: 40px;
+  width: 100%;
+  max-width: clamp(280px, 90%, 700px);
+  height: auto;
+  min-height: 120px;
+  margin: 0 auto;
   border-radius: 20px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .agriculture-overlay-container img {
@@ -317,7 +299,7 @@ body {
 
 .agriculture-text {
   color: white;
-  font-size: 32px;
+  font-size: clamp(18px, 3vw, 32px);
   font-weight: bold;
   font-family: sans-serif;
 }
@@ -325,12 +307,12 @@ body {
 
 .left-img-1-overlay-container {
   position: relative;
-  width: 300px; /* Match the width of the image */
-  height: 150px; /* Match the height of the image */
+  width: clamp(200px, 90%, 300px);
+  height: clamp(100px, 20vh, 150px);
   border-radius: 20px;
   overflow: hidden;
-  margin-left: 40px;
-  margin-top: 20px;
+  margin-left: clamp(10px, 5%, 40px);
+  margin-top: clamp(10px, 2vw, 20px);
 }
 
 .left-img-1-overlay-container img {
@@ -357,7 +339,7 @@ body {
 
 .left-img-1-text {
   color: white;
-  font-size: 32px;
+  font-size: clamp(18px, 3vw, 32px);
   font-weight: bold;
   font-family: sans-serif;
 }
@@ -365,51 +347,315 @@ body {
 
 
 .left-img-2 {
-  height: 500px;
-  width: 350px;
+  position: static;
+  margin: 16px auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
   border-radius: 20px;
-  top: -150px;
-  margin-left: 400px;
-  position: relative;
-  
 }
 
 
 .right-image img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
   object-fit: cover;
   border-radius: 20px;
-  margin-left: 50px;
-  margin-top: -2000px;
-  margin-bottom: 170px;
-} 
+}
 
 .focus-section {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 50px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: clamp(20px, 5vw, 50px);
+  flex-wrap: wrap;
 }
 
 .know-more-title {
-  flex: 3;
+  flex: 1;
+  min-width: 280px;
 }
 
 .right {
-  background-color: white;
-  flex-shrink: 0;
-  border-radius: 10px;
-  margin: 100px;
-  height: 800px;
-  width: 400px;
-  flex: 2 1 200px; 
-  margin-top: 100px;
-  box-shadow: 10px 8px 12px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 280px;
+  gap: 16px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  height: auto;
+  width: 100%;
+  box-shadow: none;
 }
 
 .aboutus-donate-button{
   text-decoration: none;
   color: black;
+}
+
+/* Desktop - 1024px and above */
+@media (min-width: 1024px) {
+  .about-us-title-1,
+  .media-title,
+  .our-impact-title,
+  .meet-the-team-title,
+  .our-progress-title {
+    gap: 60px;
+  }
+
+  .donate-button,
+  .know-more-button {
+    padding: 13px 50px;
+    font-size: 22px;
+  }
+
+  .know-more-title h2 {
+    margin-left: 150px;
+  }
+
+  .know-more-button {
+    margin-left: 150px;
+  }
+
+  .OurImpact {
+    height: 600px;
+  }
+
+  .NgoTeamMember {
+    height: 500px;
+  }
+
+  .OurProgress {
+    height: 400px;
+  }
+}
+
+/* Tablets - 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-us-title-1,
+  .media-title,
+  .our-impact-title,
+  .meet-the-team-title,
+  .our-progress-title {
+    gap: 30px;
+    font-size: 36px;
+  }
+
+  .donate-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .donate-button span {
+    font-size: 16px;
+  }
+
+  .about-us-text {
+    font-size: 16px;
+  }
+
+  .know-more-title h2 {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+
+  .know-more-button {
+    font-size: 16px;
+    padding: 12px 30px;
+    margin-left: 40px;
+  }
+
+  .card-agriculture img {
+    height: 150px;
+  }
+
+  .agriculture-text,
+  .left-img-1-text {
+    font-size: 20px;
+  }
+
+  .left-img-1-overlay-container {
+    width: 200px;
+    height: 120px;
+    margin-left: 20px;
+  }
+
+  .OurImpact {
+    height: 400px;
+  }
+
+  .NgoTeamMember {
+    height: 350px;
+  }
+
+  .OurProgress {
+    height: 300px;
+  }
+}
+
+/* Mobile Phones - Up to 479px */
+@media (max-width: 479px) {
+  body {
+    padding: 0;
+  }
+
+  .slideshow-container {
+    min-height: 200px;
+  }
+
+  .about-us-navbar-below-photos {
+    padding: 6px 0;
+    width: 100vw;
+  }
+
+  .donate-button {
+    padding: 8px 15px;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+
+  .donate-button span {
+    font-size: 14px;
+  }
+
+  .about-us-1 {
+    padding: 20px 10px;
+  }
+
+  .about-us-title-1,
+  .media-title,
+  .our-impact-title,
+  .meet-the-team-title,
+  .our-progress-title {
+    font-size: 20px;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .about-us-title-1 .line,
+  .media-title .line,
+  .our-impact-title .line,
+  .meet-the-team-title .line,
+  .our-progress .line {
+    width: 100%;
+    height: 4px;
+    margin: 10px 0;
+  }
+
+  .about-us-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .our-focus-on-work h1 {
+    font-size: 18px;
+  }
+
+  .media {
+    padding: 20px 10px;
+  }
+
+  .media1, .media2, .media3, .media4 {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .our-impact {
+    padding: 20px 10px;
+  }
+
+  .OurImpact {
+    height: 200px;
+    margin-top: -15px;
+  }
+
+  .meet-the-team {
+    padding: 20px 10px;
+  }
+
+  .NgoTeamMember {
+    height: 180px;
+    margin-top: -20px;
+  }
+
+  .our-progress {
+    padding: 20px 10px;
+  }
+
+  .OurProgress {
+    height: 150px;
+    margin-top: -30px;
+  }
+
+  .know-more-title h2 {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .know-more-button {
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
+
+  .card-agriculture img {
+    height: 100px;
+  }
+
+  .agriculture-overlay-container {
+    max-width: 100%;
+    min-height: 80px;
+  }
+
+  .agriculture-text {
+    font-size: 14px;
+  }
+
+  .left-img-1-overlay-container {
+    width: 140px;
+    height: 90px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .left-img-1-text {
+    font-size: 14px;
+  }
+
+  .left-img-2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .focus-section {
+    gap: 20px;
+  }
+
+  .know-more-title {
+    min-width: auto;
+  }
+
+  .right {
+    min-width: auto;
+    gap: 10px;
+  }
 }

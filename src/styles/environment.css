@@ -9,15 +9,11 @@ body {
   padding: 50px 20px;
 }
 
-.main-content {
-  padding: 50px 20px;
-}
-
 .gallery-title {
-  font-size: 65px;
-  font-weight: bold 30px;
-  margin-left: 70px;
-  margin-top: 55px;
+  font-size: clamp(24px, 5vw, 65px);
+  font-weight: bold;
+  margin-left: clamp(10px, 5%, 70px);
+  margin-top: clamp(30px, 5vw, 55px);
   text-decoration: underline;
 }
 
@@ -29,9 +25,10 @@ body {
 }
 
 .environment-image {
-  height: 500px;
+  height: clamp(250px, 50vh, 500px);
   width: 100%;
   margin-top: 3px;
+  object-fit: cover;
 }
 
 .second-green-bar {
@@ -46,8 +43,8 @@ main h1 {
 }
 
 main p {
-  font-size: 25px;
-  margin-left: 20px;
+  font-size: clamp(16px, 3vw, 25px);
+  margin-left: clamp(10px, 5%, 20px);
   margin-top: 40px;
 }
 
@@ -55,5 +52,88 @@ main p {
   height: 100%;
   width: 100%;
   margin-top: 3px;
+}
+
+/* Desktop - 1024px and above */
+@media (min-width: 1024px) {
+  main h1 {
+    font-size: 32px;
+  }
+
+  main p {
+    font-size: 18px;
+  }
+}
+
+/* Tablets - 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gallery-title {
+    font-size: 40px;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+
+  .main-content {
+    padding: 30px 15px;
+  }
+
+  main h1 {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  main p {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .first-green-bar,
+  .second-green-bar {
+    height: 50px;
+  }
+}
+
+/* Mobile Phones - Up to 479px */
+@media (max-width: 479px) {
+  body {
+    padding: 0;
+  }
+
+  .main-content {
+    padding: 20px 10px;
+  }
+
+  .gallery-title {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .first-green-bar,
+  .second-green-bar {
+    height: 40px;
+  }
+
+  .environment-image {
+    height: 250px;
+    margin-top: 0;
+  }
+
+  main h1 {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  main p {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+
+  .environment-curved-image {
+    margin-top: 0;
+  }
 }
 

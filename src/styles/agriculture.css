@@ -102,18 +102,20 @@
 .farming-featured-projects {
   background-color: rgb(176, 168, 168);
   height: 50px;
-  width: 300px;
-  color:black;
+  width: 100%;
+  max-width: 100%;
+  color: black;
   padding: 5px;
   text-align: center;
-  margin-left: 65px;
+  margin: 0;
   margin-top: 100px;
   border-radius: 10px;
   margin-bottom: 100px;
   font-size: 20px;
-  display: flex;              
-  align-items: center;         
+  display: flex;
+  align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 
@@ -264,4 +266,193 @@
   display: block;
   margin: 0 auto;
   width: 95%; 
+}
+
+/* Desktop - 1024px and above */
+@media (min-width: 1024px) {
+  .project-row {
+    flex-direction: row;
+  }
+
+  .project-column {
+    flex: 1;
+    max-width: 45%;
+  }
+
+  .project-column h6 {
+    margin-left: 60px;
+  }
+
+  .project-column p {
+    margin-left: 95px;
+  }
+
+  .project-image {
+    width: 600px;
+    margin-left: 60px;
+  }
+}
+
+/* Tablets - 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .farming-projects {
+    flex-wrap: wrap;
+  }
+
+  .farming-project {
+    flex: 1 1 calc(50% - 10px);
+    max-width: 50%;
+  }
+
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-column {
+    max-width: 100%;
+  }
+
+  .project-column h6 {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+
+  .project-column p {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .vertical-divider {
+    display: none;
+  }
+
+  .subscription-title {
+    font-size: 35px;
+    margin-left: 20px;
+  }
+
+  .image1 {
+    height: 350px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .farming-sustainable-solutions h2 {
+    font-size: 32px;
+    margin-left: 20px;
+  }
+
+  .farming-sustainable-solutions p {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
+
+/* Mobile Phones - Up to 479px */
+@media (max-width: 479px) {
+  .farming-projects {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 5px;
+  }
+
+  .farming-project {
+    flex: 1 1 100%;
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .farming-featured-projects {
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .project-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-column {
+    max-width: 100%;
+  }
+
+  .project-column h6 {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+  }
+
+  .project-column p {
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: 1.5;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .vertical-divider {
+    display: none;
+  }
+
+  .subscription-container {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+
+  .email-input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .join-button {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+
+  .subscription-title {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .image1 {
+    height: auto;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .farming-sustainable-solutions h2 {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .farming-sustainable-solutions p {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .farming-sustainable-solutions img {
+    width: 100%;
+  }
 }

@@ -5,18 +5,21 @@ body {
 }
 
 .education-heading {
-  margin-left: 80px;
-  font-size: 45px;
-  margin-top: 80px;
+  margin-left: clamp(10px, 5%, 80px);
+  font-size: clamp(28px, 5vw, 45px);
+  margin-top: clamp(40px, 5vw, 80px);
 }
 
 .children-with-man-container {
   width: 100%;
-  height: 700px;
+  height: clamp(400px, 70vh, 700px);
   background-color: rgb(181, 202, 98);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .children-with-man-container-all-h1 {
@@ -25,23 +28,17 @@ body {
   justify-content: center;
 }
 .children-with-man-container-h1 {
-  align-items: center;
-  justify-content: center;
-}
-
-.children-with-man-container-h1:nth-of-type(2) {
-  margin-left: -45px;
-}
-
-.children-with-man-container-h1:nth-of-type(3) {
-  margin-left: 205px;
+  text-align: center;
+  margin: 0 auto 16px auto;
+  max-width: 800px;
 }
 
 .childrenWithMan {
-  height: 600px;
-  width: 600px;
+  height: clamp(300px, 50vh, 600px);
+  width: clamp(300px, 80%, 600px);
   margin-top: 5px;
-  margin-left: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .education-green-bar {
@@ -57,13 +54,11 @@ body {
   background-color: rgb(251, 23, 23);
   color: white;
   font-size: 20px;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 150px;
-  margin-left: 40%;
-  margin-bottom: 40px;
+  margin: 40px auto;
+  text-align: center;
 }
 
 .rural-education-container {
@@ -73,7 +68,7 @@ body {
 }
 
 .rural-education-green-line {
-  width: 150px;
+  width: clamp(80px, 15%, 150px);
   height: 2px;
   background-color: #349239;
 }
@@ -125,13 +120,14 @@ body {
   display: flex;
   align-items: start;
   justify-content: start;
-  margin-left: 80px;
+  margin-left: clamp(10px, 5%, 80px);
+  padding: 0 clamp(10px, 5%, 20px);
 }
 
 .digital-p{
-  font-size: 28px;
-  margin-left: 30px;
-  margin-top: 0%;
+  font-size: clamp(16px, 3vw, 28px);
+  margin-left: clamp(10px, 5%, 30px);
+  margin-top: 0;
 }
 
 .education-children{
@@ -147,20 +143,25 @@ body {
 }
 
 .our-role-img{
- margin-left: 40px;
- margin-top: 60px;
+  margin-left: clamp(10px, 5%, 40px);
+  margin-top: clamp(20px, 5vw, 60px);
 }
 
 .our-role-container p{
-  padding: 100px;
+  padding: clamp(10px, 5%, 100px);
 }
 
-.our-work-container{
+.our-work-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 600px;
+  height: auto;
+  min-height: 400px;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
 .our-work-images{
@@ -168,85 +169,267 @@ body {
   align-items: center;
   justify-content: center;
   background-color: white;
-  box-shadow:10px 10px 12px 10px rgba(3, 3, 3, 0.1);
-  height: 500px;
-  width: 500px;
+  box-shadow: 10px 10px 12px 10px rgba(3, 3, 3, 0.1);
+  height: clamp(280px, 50vw, 500px);
+  width: clamp(280px, 90%, 500px);
+  max-width: 100%;
 }
 .our-work-container img{
   border-radius: 10px;
-  height: 400px;
-  width: 400px;
+  height: clamp(200px, 40vw, 400px);
+  width: clamp(200px, 90%, 400px);
   object-fit: cover;
-
+  max-width: 100%;
 }
 
-.our-work-p{
+.our-work-p {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0 24px;
 }
-.our-work-p1{
-  height: 120px;
-  width: 500px;
- 
+
+.our-work-p1 {
+  width: calc(33.333% - 16px);
+  min-width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Desktop - 1024px and above */
+@media (min-width: 1024px) {
+  .our-role-container {
+    flex-direction: row;
+  }
+
+  .our-work-container {
+    flex-direction: row;
+  }
+
+  .our-work-p1 {
+    width: calc(33.333% - 16px);
+  }
+}
+
+/* Tablets - 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .our-role-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .our-work-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .our-work-p1 {
+    width: 100%;
+  }
+
+  .what-we-do-button {
+    width: 250px;
+    font-size: 16px;
+  }
+
+  .education-green-bar {
+    height: 50px;
+  }
+
+  .para {
+    font-size: 20px;
+  }
+}
+
+/* Mobile Phones - Up to 479px */
+@media (max-width: 479px) {
+  .education-heading {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+
+  .children-with-man-container {
+    height: clamp(300px, 60vh, 500px);
+    padding: 10px;
+  }
+
+  .children-with-man-container-h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .childrenWithMan {
+    height: 200px;
+    width: 200px;
+    max-width: 90%;
+  }
+
+  .what-we-do-button {
+    height: 50px;
+    width: 200px;
+    font-size: 14px;
+    margin: 20px auto;
+  }
+
+  .education-green-bar {
+    height: 40px;
+  }
+
+  .para {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .rural-education-text,
+  .digital-literacy-text {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .digital-p {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .our-role-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .our-role-img {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .our-role-container p {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .education-children {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .our-work-container {
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 15px;
+    min-height: auto;
+  }
+
+  .our-work-images {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .our-work-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .our-work-p {
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .our-work-p1 {
+    width: 100%;
+  }
+
+  .our-work-p1 p {
+    font-size: 14px;
+    margin-left: 0;
+    line-height: 1.5;
+  }
+
+  .rural-area,
+  .supplies,
+  .literacy {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+
+  .underline,
+  .underline1,
+  .underline2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .our-work-button {
+    width: 150px;
+    height: 50px;
+    font-size: 12px;
+    margin-top: 50px;
+  }
 }
 .our-work-p1 p{
-  font-size: 20px;
-  margin-left: 80px;
+  font-size: clamp(14px, 2vw, 20px);
+  margin-left: clamp(10px, 5%, 80px);
 }
 
 .rural-area{
- font-size: 20px;
- margin-left: 200px;
- margin-bottom: 100px;
+  font-size: clamp(14px, 2vw, 20px);
+  margin-left: clamp(10px, 10%, 200px);
+  margin-bottom: 100px;
+  padding: 0 clamp(10px, 5%, 20px);
 }
 
 .underline{
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: clamp(10px, 5%, 80px);
+  margin-right: clamp(10px, 5%, 80px);
   height: 2px;
   background-color: black;
 }
 
 .underline1{
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: clamp(10px, 5%, 60px);
+  margin-right: clamp(10px, 5%, 60px);
   height: 2px;
   background-color: black;
 }
 
 .underline2{
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: clamp(10px, 5%, 50px);
+  margin-right: clamp(10px, 5%, 50px);
   height: 2px;
   background-color: black;
-  
 }
 
 .supplies {
-  font-size: 20px;
- margin-left: 150px;
- margin-bottom: 100px;
+  font-size: clamp(14px, 2vw, 20px);
+  margin-left: clamp(10px, 10%, 150px);
+  margin-bottom: 100px;
+  padding: 0 clamp(10px, 5%, 20px);
 }
 
 .literacy{
-  font-size: 20px;
- margin-left: 200px;
- margin-bottom: 100px;
+  font-size: clamp(14px, 2vw, 20px);
+  margin-left: clamp(10px, 10%, 200px);
+  margin-bottom: 100px;
+  padding: 0 clamp(10px, 5%, 20px);
 }
 
 .our-work-button{
   height: 60px;
-  width: 350px;
+  width: clamp(200px, 80%, 350px);
   border-radius: 20px;
   background-color: rgb(251, 23, 23);
   color: white;
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 100px;
-  margin-left: 40%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 40px;
 }
