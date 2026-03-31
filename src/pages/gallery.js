@@ -25,7 +25,14 @@ function Gallery() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+      setCurrentImage((prevImage) => {
+        const nextImage = prevImage + 1;
+        // Reset at 50% of total doubled images to create infinite loop effect
+        if (nextImage >= images.length) {
+          return 0;
+        }
+        return nextImage;
+      });
     }, 2000);
 
     return () => clearInterval(interval); 
@@ -42,7 +49,7 @@ function Gallery() {
           <div
             className="image-container"
             style={{
-              transform: `translateX(-${currentImage * 100}%)`, 
+              transform: `translateX(-${(currentImage * 100) / images.length}%)`, 
             }}
           >
             {images.concat(images).map((image, index) => (

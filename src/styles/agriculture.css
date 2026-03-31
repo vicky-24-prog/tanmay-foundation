@@ -17,14 +17,14 @@
 }
 
 .agriculture-header h1 {
-  font-size: 60px;
+  font-size: clamp(24px, 5vw, 60px);
   font-weight: 700;
   margin: 0;
   text-align: left;
   margin-top: 40px;
   text-decoration: underline;
   margin-bottom: 40px;
-  margin-left: 40px;
+  margin-left: clamp(10px, 3vw, 40px);
 }
 .agriculture-image-container {
   text-align: center;
@@ -39,14 +39,14 @@
 }
 
 .agriculture-content h2 {
-  font-size: 40px;
+  font-size: clamp(18px, 4vw, 40px);
   font-weight: 800;
   margin-top: 0;
   margin-left: 20px;
 }
 
 .agriculture-content p {
-  font-size: 30px;
+  font-size: clamp(14px, 2.5vw, 30px);
   line-height: 1.6;
   margin: 10px 0;
   margin-left: 20px;
@@ -56,7 +56,7 @@
 }
 
 .agriculture-content ol li {
-  font-size: 30px;
+  font-size: clamp(14px, 2.5vw, 30px);
   line-height: 1.6;
   margin: 10px 0;
   margin-left: 30px;
@@ -120,7 +120,7 @@
 
 
 .farming-project-details {
-  padding: 20px 50px;
+  padding: 20px clamp(12px, 4vw, 50px);
 }
 
 .project-row {
@@ -138,30 +138,30 @@
 .project-column h6 {
   font-size: 25px;
   margin-bottom: 10px;
-  margin-left: 60px;
+  margin-left: clamp(8px, 4vw, 60px);
 }
 
 .project-column p {
   font-size: 20px;
   margin-bottom: 20px;
   line-height: 1.6;
-  margin-left: 95px;
+  margin-left: clamp(8px, 6vw, 95px);
 }
 
 .project-image {
-  width: 600px;
+  width: clamp(200px, 80vw, 600px);
   max-height: 500px;
   border-radius: 10px;
   object-fit: cover;
   margin-top: 60px;
-  margin-left: 60px;
+  margin-left: clamp(8px, 4vw, 60px);
 }
 
 .vertical-divider {
   width: 2px;
   background-color: #aaa;
   height: 100%;
-  min-height: 800px;
+  min-height: clamp(200px, 40vw, 800px);
 }
 
 
@@ -186,18 +186,18 @@
 }
 
 .subscription-title{
-  margin-left: 35px;
+  margin-left: clamp(8px, 3vw, 35px);
   margin-top: 40px;
   font-size: 50px;
 }
 
 .subscription-container {
   display: flex;
-  justify-content: flex-start; /* aligns to left */
+  justify-content: flex-start;
   align-items: center;
-  margin-left: 35px; /* match title margin */
+  margin-left: clamp(8px, 3vw, 35px);
   margin-bottom: 50px;
-  gap: 20px; /* optional: space between input and button */
+  gap: 20px;
 }
 
 
@@ -206,7 +206,9 @@
   text-align: center;
   font-size: 16px;
   border-radius: 40px;
-  max-width: 400px;
+  max-width: min(400px, 100%);
+  width: 100%;
+  box-sizing: border-box;
   outline: none;
   box-shadow: 10px 10px 10px rgba(3, 0, 0, 0.1);
 }
@@ -222,7 +224,9 @@
   color: black;
   display: flex;
   align-items: center;
-  max-width: 200px;
+  max-width: min(200px, 100%);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .join-button:hover {
@@ -239,19 +243,19 @@
 
 .image1 {
   height: 450px;
-  width: 500px;
-  margin-left: 55px;
-  margin-right: 55px;
+  width: clamp(200px, 80vw, 500px);
+  margin-left: clamp(8px, 4vw, 55px);
+  margin-right: clamp(8px, 4vw, 55px);
   border-radius: 10px;
 }
 
 .farming-sustainable-solutions h2{
-  font-size: 45px;
+  font-size: clamp(20px, 4vw, 45px);
   margin-left: 30px;
 }
 
 .farming-sustainable-solutions p{
-  font-size: 30px;
+  font-size: clamp(14px, 2.5vw, 30px);
   margin-left: 30px;
 }
 
@@ -266,6 +270,71 @@
   display: block;
   margin: 0 auto;
   width: 95%; 
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .agriculture-header h1 {
+    font-size: clamp(22px, 4vw, 40px);
+    margin-left: 16px;
+  }
+
+  .agriculture-content h2 {
+    font-size: clamp(18px, 3.5vw, 28px);
+  }
+
+  .agriculture-content p,
+  .agriculture-content ol li {
+    font-size: clamp(13px, 2vw, 18px);
+  }
+
+  .farming-project-details {
+    padding: 16px;
+  }
+
+  .project-column h6 {
+    margin-left: 8px;
+  }
+
+  .project-column p {
+    margin-left: 8px;
+  }
+
+  .project-image {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .vertical-divider {
+    display: none;
+  }
+
+  .image1 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .subscription-title,
+  .subscription-container {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .email-input,
+  .join-button {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .farming-sustainable-solutions h2 {
+    font-size: clamp(18px, 3vw, 30px);
+  }
+
+  .farming-sustainable-solutions p {
+    font-size: clamp(13px, 2vw, 18px);
+  }
 }
 
 /* Desktop - 1024px and above */
